@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joss Laundry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Joss Laundry Logo">
+            </div>
+            <h1>Joss Laundry</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Welcome to Joss Laundry</h2>
+            <p>Your laundry, our priority!</p>
+        </div>
+    </section>
+
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form action="#" method="post" class="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">Select...</option>
+                    <option value="cuci_basah">Cuci Basah</option>
+                    <option value="dry_cleaning">Dry Cleaning</option>
+                    <option value="premium_wash">Premium Wash</option>
+                    <option value="setrika">Setrika</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="social-icons">
+                <li><a href="https://www.instagram.com/yourinstagram" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/yourfacebook" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://wa.me/yourwhatsappnumber" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a></li>
+            </ul>
+            <p>&copy; 2024 Joss Laundry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
